@@ -1,1 +1,98 @@
+/*
+Abstracts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*
+Base
+*/
+body {
+  font-family: "Lato", sans-serif;
+}
 
+h1 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/*
+Components
+*/
+.header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu .logo {
+  width: 5rem;
+}
+.header .menu .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.header .menu__list {
+  display: flex;
+  list-style-type: none;
+}
+.header .menu__list-item {
+  margin-left: 2rem;
+  padding: 1rem 0;
+}
+.header .menu__list-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.header .menu__list-item a:hover {
+  text-decoration: underline;
+}
+.header .menu__list-item--active a {
+  color: red;
+}
+
+/*
+Layout
+*/
+/*
+Pages
+*/
+/*
+Themes
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+.h-layout {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*
+Vendors
+*/

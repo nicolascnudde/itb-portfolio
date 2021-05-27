@@ -1,0 +1,41 @@
+.header {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 5rem;
+            
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &__list {
+            display: flex;
+
+            list-style-type: none;
+
+            &-item {
+                margin-left: 2rem;
+                padding: 1rem 0;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &--active {
+                    a {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
