@@ -5,13 +5,13 @@
 }
 
 body {
-    background: #333;
-    color: #fff;
+    background: $primary;
+    color: $secondary;
 }
 
 .h-layout {
     width: 100%;
     max-width: 70rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 $spacing-base;
 }

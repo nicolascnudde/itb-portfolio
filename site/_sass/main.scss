@@ -2,6 +2,7 @@
 Abstracts
 */
 @import 'abstracts/fonts';
+@import 'abstracts/variables';
 
 /*
 Base
@@ -11,18 +12,26 @@ Base
 /*
 Components
 */
+@import 'components/about';
+@import 'components/bar';
 @import 'components/buttons';
+@import 'components/cards';
 @import 'components/footer';
 @import 'components/header';
+@import 'components/reflections';
+@import 'components/services';
+@import 'components/technologies';
+@import 'components/title';
 
 /*
 Layout
 */
+@import 'layout/mailchimp';
 
 /*
 Pages
 */
-
+@import 'pages/projects';
 /*
 Themes
 */

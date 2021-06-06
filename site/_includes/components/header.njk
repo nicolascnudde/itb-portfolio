@@ -1,15 +1,13 @@
 <header class="header">
-    <div class="h-layout">
-        <div class="menu">
-            <div class="menu__info">
-                <span class="logo">
-                    <a href="{{ '/' | url }}">NC</a>
-                </span>
-            </div>
-
-            <nav class="menu">
-                {% include "components/navigation.njk" %}
-            </nav>
+    <div class="menu h-layout">
+        <div class="logo">
+            <a href="{{ '/' | url }}">
+                <img src="/static/images/logo.png" alt="Nicolas Cnudde Logo">
+            </a>
         </div>
+
+        <nav class="main-nav">
+            {% include "components/navigation.njk" %}
+        </nav>
     </div>
 </header>

@@ -1,0 +1,20 @@
+.reflections {
+  margin-top: $spacing-lg;
+  
+  h2 { 
+    text-align: center; 
+  }
+
+  &__list {
+    margin-top: $spacing-sm;
+    
+    &-item {
+      margin-top: $spacing-sm;
+
+
+      h3 {
+        margin: $spacing-base 0;
+      }
+    }
+  }
+}

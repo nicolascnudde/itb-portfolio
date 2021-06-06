@@ -1,0 +1,34 @@
+.services {
+  background: $secondary;
+  color: $primary;
+  padding: $spacing-sm 0;
+
+  text-align: center;
+
+  &__list {
+    margin-top: $spacing-sm;
+    
+    &-item {
+      margin-top: $spacing-sm;
+      
+      img {
+        width: 7rem;
+      }
+
+      h3 {
+        margin: $spacing-base 0;
+      }
+    }
+  }
+
+  @media (min-width: 48rem) { 
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        flex-basis: 30%;
+      }
+    }
+  }
+}

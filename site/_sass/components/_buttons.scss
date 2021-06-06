@@ -1,0 +1,16 @@
+.btn {
+  &-primary {
+    padding: $spacing-base;
+    border: 1px solid $secondary;
+    background: none;
+    color: $secondary;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+
+    &:hover {
+      background: $secondary;
+      color: $primary;
+    }
+  }
+}

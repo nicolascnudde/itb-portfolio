@@ -1,17 +1,26 @@
 [
     {
-        "title": "Title 1",
-        "image": "image",
-        "description": "Description of the project"
+        "client": "Artemia by INVE Aquaculture",
+        "image": "artemia_inve_aquaculture.png",
+        "description": "INVE Aquaculture specializes in providing state-of-the-art solutions in three main domains that are essential to aquaculture production: optimization of animal nutrition, careful management of animal health and rigorous control of the culture environment. They wanted to promote their Artemia products, technologies and tools with having their own subsite. Designed from scratch in WordPress",
+        "category": "WordPress"
     },
     {
-        "title": "Title 2",
-        "image": "image",
-        "description": "Description of the project"
+        "client": "The Ghent Festival (Gentse Feesten)",
+        "image": "gentse_feesten.png",
+        "description": "For @Work-1 we had to rebuild the original site of the Ghent Festival. The site includes a program with the daily activities which data is dynamically loaded with the help of JavaScript",
+        "category": "GitHub"
     },
     {
-        "title": "Title 3",
-        "image": "image",
-        "description": "Description of the project"
+        "client": "Arne Quinze",
+        "image": "arne_quinze.png",
+        "description": "For @Work-1 we had to rebuild the original website of sculptor and painter Arne Quinze. He's ",
+        "category": "GitHub"
+    },
+    {
+        "client": "Heroma",
+        "image": "heroma.png",
+        "description": "Heroma is a Belgian company that specializes in decorating and furnishing company vehicles. Their previous site was outdated and they wanted a brand new custom design. Site was made in WordPress.",
+        "category": "WordPress"
     }
 ]

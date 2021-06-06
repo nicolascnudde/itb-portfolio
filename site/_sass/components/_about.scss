@@ -1,0 +1,35 @@
+.about {
+  margin-top: $spacing-sm;
+
+  &__container {
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 7rem;
+  }
+
+  h3 {
+    flex-basis: 100%;
+    margin: $spacing-sm 0;
+  }
+
+  p {
+    margin-top: $spacing-base;
+  }
+
+  @media (min-width: 48rem) {
+    p { 
+      margin-top: 0.5rem;
+    }
+  }
+
+  button {
+    margin-top: $spacing-sm;
+  }
+}

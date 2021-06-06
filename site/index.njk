@@ -1,11 +1,157 @@
 ---
 layout: layouts/base.njk
+title: About
 eleventyNavigation:
-  key: Home
+  key: about
   order: 1
-title: Coming soon!
 ---
 
-<section class="h-layout">
-  <h1>{{ title }}</h2>
+<section class="title">
+    <div class="title__container h-layout">
+        <h1>{{ title }}</h1>
+
+        <div class="bar">
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about__container h-layout">
+        <div>
+            <img src="../static/images/nicolas_memoji.png">
+
+            <h3>Hello, I'm Nicolas. Nice to meet you.</h3>
+
+            <p>I am currently a student at the Artevelde University of Applied Sciences where I'm in the middle of getting my Associate Degree in Programming.</p>
+            
+            <p>I have a serious passion for designing and developing web applications.</p>
+
+            <a href="/contact">
+                <button class="btn-primary">
+                    <span>Send me a message</span>
+                </button>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="h-layout">
+        <h2>Services</h2>
+
+        <ul class="services__list">
+            <li class="services__list-item">
+                <img src="../static/images/uiux_design.svg" alt=""/>
+
+                <h3>UI/UX Design</h3>
+
+                <p>I make beautiful designs and interfaces that people love to use. Simplicity is key.</p>
+            </li>
+
+            <li class="services__list-item">
+                <img src="../static/images/frontend_dev.svg" alt=""/>
+
+                <h3>Front-End Development</h3>
+
+                <p>I convert data into a graphical interface so that people can view an application or website and seemlessly interact with it.</p>
+            </li>
+
+            <li class="services__list-item">
+                <img src="../static/images/backend_dev.svg" alt=""/>
+
+                <h3>Back-End Development</h3>
+
+                <p>I make sure all websites run very fast and smooth. I also manage databases and create webshops.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="technologies">
+    <div class="h-layout">
+        <h2>Technologies</h2>
+
+        <ul class="technologies__list">
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/html5.svg" alt="HTML5" />
+
+                    <figcaption>HTML5</figcaption>
+                </figure>
+            </li>
+
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/css3.svg" alt="CSS3" />
+
+                    <figcaption>CSS3</figcaption>
+                </figure>
+            </li>  
+
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/javascript.svg" alt="JavaScript" />
+
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </li>
+
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/react.svg" alt="React" />
+
+                    <figcaption>React</figcaption>
+                </figure>
+            </li>
+
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/wordpress.svg" alt="WordPress" />
+
+                    <figcaption>WordPress</figcaption>
+                </figure>
+            </li>
+
+            <li class="technologies__list-item">
+                <figure>
+                    <img src="../static/images/adobe.svg" alt="Adobe XD" />
+
+                    <figcaption>Adobe PS & XD</figcaption>
+                </figure>
+            </li>          
+        </ul>
+    </div>
+</section>
+
+<section class="reflections">
+    <div class="h-layout">
+        <h2>Reflections</h2>
+
+        <ul class="reflections__list">
+            <li class="reflections__list-item">
+                <p class="question">What did I learn from the guest speakers?</p>
+
+                <p class="answer">A lot! </p>
+            </li>
+
+            <li class="reflections__list-item">
+                <p class="question">Which job do I feel is the right one for me?</p>
+
+                <p class="answer">Anwer</p>
+            </li>
+
+            <li class="reflections__list-item">
+                <p class="question">Which tools have I used so far?</p>
+
+                <p class="answer">Anwer</p>
+            </li>
+
+            <li class="reflections__list-item">
+                <p class="question">Which tools would I like to use in the future and why?</p>
+
+                <p class="answer">Anwer</p>
+            </li>
+        </ul>
+    </div>
 </section>

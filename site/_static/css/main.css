@@ -1,29 +1,44 @@
 /*
 Abstracts
 */
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*
+Fonts
+*/
+/*
+Spacing
+*/
 /*
 Base
 */
 body {
   font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
 h1 {
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
 h2 {
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.2;
 }
 
 h3 {
-  font-family: "Permanent Marker", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
 }
@@ -32,46 +47,304 @@ p {
   line-height: 1.5;
 }
 
+button {
+  font-family: "Lato";
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /*
 Components
 */
-.header .menu {
+.about {
+  margin-top: 2rem;
+}
+.about__container {
+  height: 60vh;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
-.header .menu .logo {
-  width: 5rem;
+.about img {
+  width: 7rem;
 }
-.header .menu .logo a {
-  color: #fff;
-  text-decoration: none;
+.about h3 {
+  flex-basis: 100%;
+  margin: 2rem 0;
 }
-.header .menu__list {
+.about p {
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  .about p {
+    margin-top: 0.5rem;
+  }
+}
+.about button {
+  margin-top: 2rem;
+}
+
+.bar {
+  height: 0.2rem;
+  width: 4rem;
+  background: #f4f4f4;
+  margin: 0.75rem auto 0;
+}
+
+.btn-primary {
+  padding: 1rem;
+  border: 1px solid #f4f4f4;
+  background: none;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+.btn-primary:hover {
+  background: #f4f4f4;
+  color: #212121;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.header {
+  display: none;
+}
+.header .menu {
+  padding: 1rem 0;
+  text-align: center;
+}
+.header .menu .logo img {
+  width: 10rem;
+}
+.header .menu .main-nav__list {
+  margin-top: 0.5rem;
   display: flex;
+  justify-content: center;
   list-style-type: none;
 }
-.header .menu__list-item {
-  margin-left: 2rem;
-  padding: 1rem 0;
+.header .menu .main-nav__list-item {
+  margin: 1rem;
 }
-.header .menu__list-item a {
-  color: #fff;
+.header .menu .main-nav__list-item a {
+  padding: 0.5rem;
+  color: #f4f4f4;
   text-decoration: none;
+  font-weight: 400;
 }
-.header .menu__list-item a:hover {
-  text-decoration: underline;
+.header .menu .main-nav__list-item a:hover {
+  border-bottom: 1px solid #f4f4f4;
 }
-.header .menu__list-item--active a {
-  color: red;
+.header .menu .main-nav__list-item--active a {
+  border-bottom: 1px #ba09ff solid;
+}
+.header .menu .main-nav__list-item--active a:hover {
+  border-bottom: 1px #ba09ff solid;
+}
+@media (min-width: 48rem) {
+  .header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .menu .main-nav__list {
+    margin-top: 0;
+  }
+}
+
+.reflections {
+  margin-top: 4rem;
+}
+.reflections h2 {
+  text-align: center;
+}
+.reflections__list {
+  margin-top: 2rem;
+}
+.reflections__list-item {
+  margin-top: 2rem;
+}
+.reflections__list-item h3 {
+  margin: 1rem 0;
+}
+
+.services {
+  background: #f4f4f4;
+  color: #212121;
+  padding: 2rem 0;
+  text-align: center;
+}
+.services__list {
+  margin-top: 2rem;
+}
+.services__list-item {
+  margin-top: 2rem;
+}
+.services__list-item img {
+  width: 7rem;
+}
+.services__list-item h3 {
+  margin: 1rem 0;
+}
+@media (min-width: 48rem) {
+  .services__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services__list-item {
+    flex-basis: 30%;
+  }
+}
+
+.technologies {
+  margin: 2rem 0;
+  text-align: center;
+}
+.technologies__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.technologies__list-item {
+  margin-top: 2rem;
+  flex-basis: 30%;
+}
+.technologies__list-item img {
+  width: 50%;
+}
+.technologies__list-item figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 48rem) {
+  .technologies__list-item {
+    flex-basis: 15%;
+  }
+}
+
+.title {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /*
 Layout
 */
+.mailchimp {
+  background: #f4f4f4;
+  color: #212121;
+  padding-bottom: 3rem;
+}
+.mailchimp .h-layout {
+  max-width: 50rem;
+}
+.mailchimp section {
+  margin-top: 3rem;
+}
+.mailchimp img {
+  border: 1px solid #212121;
+  width: 100%;
+}
+.mailchimp p {
+  margin: 1rem 0;
+}
+.mailchimp ul {
+  list-style-type: lower-roman;
+  margin-left: 1rem;
+}
+.mailchimp ul li {
+  text-align: left;
+  line-height: 1.5;
+}
+.mailchimp figure {
+  margin-top: 2rem;
+}
+.mailchimp figure figcaption {
+  font-size: 1rem;
+  text-align: center;
+}
+.mailchimp__title {
+  padding-top: 3rem;
+  text-align: center;
+}
+.mailchimp .mailing img:last-child {
+  margin-top: 2rem;
+}
+.mailchimp .mailchimp__logo {
+  text-align: center;
+}
+.mailchimp .mailchimp__logo img {
+  margin: 0 auto;
+  width: 25%;
+  border: none;
+}
+
 /*
 Pages
 */
+.projects__list {
+  margin-top: 4rem;
+}
+.projects__list-item {
+  margin: 7rem 0;
+}
+.projects__list-item img {
+  width: 90%;
+  transition: all 0.4s ease;
+}
+.projects__list-item a {
+  display: block;
+  color: #f4f4f4;
+  text-align: center;
+}
+.projects__list-item a .btn-primary {
+  margin-top: 1rem;
+}
+.projects__list-item h3 {
+  display: inline-block;
+  margin: 1rem auto;
+  padding-bottom: 0.5rem;
+  background: linear-gradient(currentColor 0 0) bottom/var(--d, 2rem) 1px no-repeat;
+  transition: 0.4s;
+}
+.projects__list-item:hover img {
+  transform: scale(1.05);
+}
+.projects__list-item:hover h3 {
+  --d: 100%;
+}
+@media (min-width: 48rem) {
+  .projects__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .projects__list-item a {
+    display: initial;
+  }
+  .projects__list-item img {
+    width: 100%;
+  }
+  .projects__list-item > div:first-child {
+    flex-basis: 35%;
+    order: 0;
+  }
+  .projects__list-item > div:last-child {
+    flex-basis: 60%;
+  }
+}
+
 /*
 Themes
 */
@@ -82,8 +355,8 @@ Themes
 }
 
 body {
-  background: #333;
-  color: #fff;
+  background: #212121;
+  color: #f4f4f4;
 }
 
 .h-layout {

@@ -1,0 +1,65 @@
+.mailchimp {
+  background: $secondary;
+  color: $primary;
+  padding-bottom: 3rem;
+
+  .h-layout {
+    max-width: 50rem;
+  }
+  
+  section {
+    margin-top: 3rem;
+  }
+
+  img {
+    border: 1px solid $primary;
+    width: 100%;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style-type:lower-roman;
+    margin-left: 1rem;
+    
+    li {
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+
+  figure {
+    margin-top: 2rem;
+
+    figcaption {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .intro {
+  }
+
+  .mailing {
+    img:last-child {
+      margin-top: 2rem;
+    }
+  }
+
+  .mailchimp__logo {
+    text-align: center;
+
+    img { 
+      margin: 0 auto;
+      width: 25%;
+      border: none;
+    }
+  }
+}
