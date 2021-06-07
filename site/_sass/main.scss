@@ -20,6 +20,7 @@ Components
 @import 'components/header';
 @import 'components/reflections';
 @import 'components/services';
+@import 'components/socials';
 @import 'components/technologies';
 @import 'components/title';
 
@@ -31,7 +32,9 @@ Layout
 /*
 Pages
 */
-@import 'pages/projects';
+@import 'pages/contact';
+@import 'pages/project';
+@import 'pages/work';
 /*
 Themes
 */

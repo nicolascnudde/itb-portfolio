@@ -1,0 +1,29 @@
+.socials {
+  margin-top: $spacing-base;
+  &__list {
+      display: flex;
+      justify-content: center;
+
+      > li {
+          margin-right: $spacing-base;
+
+          a {
+              i {
+                  font-size: 2rem;
+                  color: $secondary;
+                  transition: 0.2s ease;
+                  transform: translateY(0);
+
+                  &:hover {
+                      color: $accent;
+                      transform: translateY(-10%);
+                  }
+              }
+          }
+      }
+
+      > li:last-child {
+          margin-right: 0;
+      }
+  }
+}

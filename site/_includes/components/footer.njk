@@ -1,5 +1,9 @@
 <footer class="footer">
     <div class="h-layout">
-        <p>© {{ helpers.currentYear() }} Designed and developed by Nicolas Cnudde</p>
+        <p class="copyright">© {{ helpers.currentYear() }}</p>
+        
+        <p class="made-by">Made with <i class="fas fa-heart"></i> by Nicolas Cnudde</p>
+
+        {% include "components/socials.njk" %}
     </div>
 </footer>

@@ -1,4 +1,15 @@
+footer {
+    border-top: 1px solid white;
+}
+
 .footer {
-    margin-top: $spacing-md;
+    padding: $spacing-sm 0;
     text-align: center;
+
+    .made-by {
+        margin-top: 0.5rem;
+        .fa-heart {
+            color: #f1403c;
+        }
+    }
 }

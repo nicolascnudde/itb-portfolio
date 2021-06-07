@@ -1,6 +1,4 @@
 .header {
-    display: none;
-    
     .menu {
         padding: $spacing-base 0;
         text-align: center;
@@ -26,18 +24,20 @@
                             color: $secondary;
                             text-decoration: none;
                             font-weight: 400;
+                            background: linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 2px no-repeat;
+                            transition: 0.4s;
 
                             &:hover {
-                                border-bottom: 1px solid $secondary;
+                                --d: 100%;
                             }
                         }
 
                     &--active {
                         a {
-                            border-bottom: 1px #ba09ff solid;
+                            background: linear-gradient($accent 0 0) 0 100% /var(--d, 100%) 2px no-repeat;;
                         
                             &:hover {
-                                border-bottom: 1px #ba09ff solid;
+                                background: linear-gradient($accent 0 0) 0 100% /var(--d, 100%) 2px no-repeat;;
                             }
                         }
                     }

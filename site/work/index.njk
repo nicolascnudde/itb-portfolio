@@ -19,22 +19,22 @@ eleventyNavigation:
 <section class="projects">
   <div class="h-layout">    
     <ul class="projects__list">
-        {% for project in projects %}
+        {% for work in collections.work %}
             <li class="card projects__list-item">
                 <div class="card__left">
-                  <a href="{{ projects.url }}">
-                    <img src="/static/images/{{ project.image }}" alt="thumbnail">
+                  <a href="{{ work.url }}">
+                    <img src="/static/images/{{ work.data.image }}" alt="{{ work.data.client }}">
                   </a>
                 </div>
 
                 <div class="card__right">
-                  <a href="{{ projects.url }}">
-                    <h3>{{ project.client }}</h3>
+                  <a href="{{ work.data.url }}">
+                    <h3>{{ work.data.client }}</h3>
                   </a>
                   
-                  <p>{{ project.description }}</p>
+                  <p>{{ work.data.description }}</p>
 
-                  <a>
+                  <a href="{{ work.data.url }}">
                     <button class="btn-primary">Check out the details</button>
                   </a>
                 </div>

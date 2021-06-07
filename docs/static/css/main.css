@@ -111,14 +111,21 @@ Components
   color: #212121;
 }
 
-.footer {
-  margin-top: 3rem;
-  text-align: center;
+footer {
+  border-top: 1px solid white;
 }
 
-.header {
-  display: none;
+.footer {
+  padding: 2rem 0;
+  text-align: center;
 }
+.footer .made-by {
+  margin-top: 0.5rem;
+}
+.footer .made-by .fa-heart {
+  color: #f1403c;
+}
+
 .header .menu {
   padding: 1rem 0;
   text-align: center;
@@ -140,15 +147,17 @@ Components
   color: #f4f4f4;
   text-decoration: none;
   font-weight: 400;
+  background: linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 2px no-repeat;
+  transition: 0.4s;
 }
 .header .menu .main-nav__list-item a:hover {
-  border-bottom: 1px solid #f4f4f4;
+  --d: 100%;
 }
 .header .menu .main-nav__list-item--active a {
-  border-bottom: 1px #ba09ff solid;
+  background: linear-gradient(#003fff 0 0) 0 100%/var(--d, 100%) 2px no-repeat;
 }
 .header .menu .main-nav__list-item--active a:hover {
-  border-bottom: 1px #ba09ff solid;
+  background: linear-gradient(#003fff 0 0) 0 100%/var(--d, 100%) 2px no-repeat;
 }
 @media (min-width: 48rem) {
   .header .menu {
@@ -180,7 +189,7 @@ Components
 .services {
   background: #f4f4f4;
   color: #212121;
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
 }
 .services__list {
@@ -205,8 +214,32 @@ Components
   }
 }
 
+.socials {
+  margin-top: 1rem;
+}
+.socials__list {
+  display: flex;
+  justify-content: center;
+}
+.socials__list > li {
+  margin-right: 1rem;
+}
+.socials__list > li a i {
+  font-size: 2rem;
+  color: #f4f4f4;
+  transition: 0.2s ease;
+  transform: translateY(0);
+}
+.socials__list > li a i:hover {
+  color: #003fff;
+  transform: translateY(-10%);
+}
+.socials__list > li:last-child {
+  margin-right: 0;
+}
+
 .technologies {
-  margin: 2rem 0;
+  margin: 4rem 0;
   text-align: center;
 }
 .technologies__list {
@@ -292,6 +325,44 @@ Layout
 /*
 Pages
 */
+.contact form label {
+  width: 100%;
+  display: block;
+  margin-top: 1.5rem;
+}
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  background: none;
+  color: #f4f4f4;
+  outline: none;
+}
+.contact form textarea {
+  resize: vertical;
+}
+.contact form .form__submit {
+  margin: 1rem 0 3rem;
+  text-align: center;
+}
+.contact form .form__submit input {
+  padding: 1rem;
+}
+
+.project img {
+  width: 100%;
+}
+.project .h-layout {
+  max-width: 50rem;
+}
+.project__content img {
+  margin-top: 7rem;
+}
+
 .projects__list {
   margin-top: 4rem;
 }
