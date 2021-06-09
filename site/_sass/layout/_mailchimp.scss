@@ -1,8 +1,4 @@
 .mailchimp {
-  background: $secondary;
-  color: $primary;
-  padding-bottom: 3rem;
-
   .h-layout {
     max-width: 50rem;
   }
@@ -44,9 +40,6 @@
     text-align: center;
   }
 
-  .intro {
-  }
-
   .mailing {
     img:last-child {
       margin-top: 2rem;
@@ -61,5 +54,21 @@
       width: 25%;
       border: none;
     }
+  }
+  
+  .intro {
+    margin-bottom: 3rem;
+  }
+
+  .mailing,
+  .survey {
+    padding-top: 3rem;
+    margin-top: 0;
+    background: $secondary;
+    color: $primary;
+  }
+
+  .survey {
+    padding-bottom: 3rem;
   }
 }
