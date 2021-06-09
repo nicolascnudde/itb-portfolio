@@ -14,6 +14,18 @@ layout: layouts/base.njk
     <section class="project__content">
         <div class="h-layout">
             <img src="/static/images/{{ image }}" alt={{ client }} />
+        
+            <h2>Overview</h2>
+
+            <p>{{ description }}</p>
+
+            <h2>Specifications</h2>
+
+            <p>Project type: <strong>{{ type }}</strong>
+
+            <p class="p--tech">Technologies used: <strong>{{ technologies }}</strong></p>
+
+            <a class="visit-website" href="{{ link }}" target="_blank" rel="noopener noreferrer"><button class="btn-primary">Visit website</button></a>
         </div>
     </section>
 </div>

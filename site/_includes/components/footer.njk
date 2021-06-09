@@ -1,9 +1,15 @@
 <footer class="footer">
     <div class="h-layout">
-        <p class="copyright">© {{ helpers.currentYear() }}</p>
+        <p class="copyright">© {{ helpers.currentYear() }} Nicolas Cnudde</p>
         
-        <p class="made-by">Made with <i class="fas fa-heart"></i> by Nicolas Cnudde</p>
+        <p class="made-by">Made with <i class="fas fa-heart"></i> by me</p>
 
         {% include "components/socials.njk" %}
+
+        <div class="scroll-to-top">
+            <button id="scrollToTopBtn">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
     </div>
 </footer>

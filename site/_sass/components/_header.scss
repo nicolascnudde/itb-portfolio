@@ -34,11 +34,7 @@
 
                     &--active {
                         a {
-                            background: linear-gradient($accent 0 0) 0 100% /var(--d, 100%) 2px no-repeat;;
-                        
-                            &:hover {
-                                background: linear-gradient($accent 0 0) 0 100% /var(--d, 100%) 2px no-repeat;;
-                            }
+                            background: linear-gradient(#ba09ff 0 0) 0 100% /var(--d, 100%) 2px no-repeat;
                         }
                     }
                 }

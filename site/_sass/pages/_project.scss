@@ -9,9 +9,31 @@
 
   &__content {
     img {
-      margin-top: 7rem;
+      margin-top: $spacing-lg;
+    }
+
+    h2 {
+      margin-top: $spacing-md;
+    }
+
+    @media (min-width: 48rem) {
+      h2 {
+        margin-top: $spacing-sm;
+      }
+    }
+
+    p {
+      margin-top: $spacing-base;
+    }
+    
+    .p--tech {
+        margin-top: 0.5rem;
+    }
+
+    .visit-website {
+      button {
+        margin-top: $spacing-sm;
+      }
     }
   }
-
-
 }

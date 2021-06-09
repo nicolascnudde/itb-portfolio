@@ -1,5 +1,16 @@
 .contact {
+  p {
+    margin-top: $spacing-base;
+    font-size: 1.25rem;
+    width: 75%;
+  
+    &:first-child {
+      margin-top: $spacing-md;
+    }
+  }
+
   form {
+    margin-top: $spacing-md;
     label {
       width: 100%;
       display: block;
@@ -9,6 +20,7 @@
     input[type="text"],
     input[type="email"],
     textarea {
+      font-family: 'Lato', sans-serif;
       margin-top: 0.5rem;
       width: 100%;
       padding: 1rem;
@@ -23,17 +35,32 @@
       resize: vertical;
     }
 
-
-
-    .form { 
+    .form {
       &__submit {
         margin: 1rem 0 3rem;
         text-align: center;
 
         input {
           padding: 1rem;
+          font-size: 1.1rem;
         }
       }
+    }
+  }
+
+  &__alt {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    transform: translateX(0);
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: translateX(1rem);
+    }
+
+    a {
+      margin-left: 0.25rem;
+      color: $secondary;
     }
   }
 }

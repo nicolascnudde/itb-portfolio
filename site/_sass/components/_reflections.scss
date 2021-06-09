@@ -11,6 +11,18 @@
     &-item {
       margin-top: $spacing-sm;
 
+      .question,
+      .answer {
+        margin-top: $spacing-base;
+      }
+
+      .question {
+        font-weight: 500;
+      }
+
+      .answer {
+
+      }
 
       h3 {
         margin: $spacing-base 0;
