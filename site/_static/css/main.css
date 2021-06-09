@@ -64,7 +64,7 @@ Components
   margin-top: 2rem;
 }
 .about__container {
-  height: 65vh;
+  height: 70vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -78,7 +78,7 @@ Components
   flex-basis: 100%;
   margin: 2rem 0;
 }
-.about > div p {
+.about p {
   margin-top: 1rem;
   text-align: center;
 }

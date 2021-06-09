@@ -2,7 +2,7 @@
   margin-top: $spacing-sm;
 
   &__container {
-    height: 65vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,12 +19,10 @@
     margin: $spacing-sm 0;
   }
 
-  > div { 
-    p {
-    margin-top: $spacing-base;
-    text-align: center;
-  }
-  }
+  p {
+  margin-top: $spacing-base;
+  text-align: center;
+}
 
   @media (min-width: 48rem) {
     p { 
