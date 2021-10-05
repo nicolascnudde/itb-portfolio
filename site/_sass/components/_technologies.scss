@@ -9,7 +9,7 @@
     justify-content: space-between;
     
     &-item {
-      margin-top: $spacing-sm;
+      margin-top: $spacing-md;
       flex-basis: 30%;
 
       img {
@@ -24,8 +24,8 @@
 
     @media (min-width: 48rem) {
       &-item {
-        flex-basis: 15%
+        flex-basis: 15%;
       }
     }
   }
-}
+} 

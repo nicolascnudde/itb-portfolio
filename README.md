@@ -1,5 +1,16 @@
-# IT Business
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Eindopdracht 11 - Persoonlijke portfolio website
+For our course IT Business, our final project consisted of building our own personal portfolio website.
 
-By Nicolas Cnudde - PGM 1B
+
+### Built With
+
+* HTML
+* CSS
+* JavaScript
+* SASS
+* Nunjucks
+* Eleventy
+
+<p align="right">(<a href="#top">back to top</a>)</p>
