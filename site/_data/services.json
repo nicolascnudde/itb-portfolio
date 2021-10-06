@@ -1,0 +1,17 @@
+[
+    {
+        "image": "uiux_design.svg",
+        "title": "UI/UX Design",
+        "description": "I make beautiful designs and interfaces that people love to use. Simplicity is key."
+    },
+    {
+        "image": "frontend_dev.svg",
+        "title": "Front-End Development",
+        "description": "I convert data into a graphical interface so that people can view an application or website and seemlessly interact with it."
+    },
+    {
+        "image": "backend_dev.svg",
+        "title": "Back-End Development",
+        "description": "I make sure my websites run fast and smooth. I also manage databases and create webshops."
+    }
+]

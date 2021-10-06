@@ -41,132 +41,22 @@ eleventyNavigation:
         <h2>Services</h2>
 
         <ul class="services__list">
-            <li class="services__list-item">
-                <img src="../static/images/uiux_design.svg" alt=""/>
+            {% for service in services %}
+                {% include "components/services.njk" %}
+            {% endfor %}
 
-                <h3>UI/UX Design</h3>
-
-                <p>I make beautiful designs and interfaces that people love to use. Simplicity is key.</p>
-            </li>
-
-            <li class="services__list-item">
-                <img src="../static/images/frontend_dev.svg" alt=""/>
-
-                <h3>Front-End Development</h3>
-
-                <p>I convert data into a graphical interface so that people can view an application or website and seemlessly interact with it.</p>
-            </li>
-
-            <li class="services__list-item">
-                <img src="../static/images/backend_dev.svg" alt=""/>
-
-                <h3>Back-End Development</h3>
-
-                <p>I make sure my websites run fast and smooth. I also manage databases and create webshops.</p>
-            </li>
         </ul>
     </div>
 </section>
 
 <section class="technologies">
     <div class="h-layout">
-        <h2>Technologies</h2>
+        <h2>Technologies & Tools</h2>
 
         <ul class="technologies__list">
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/html5.svg" alt="HTML5" />
-
-                    <figcaption>HTML5</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/css3.svg" alt="CSS3" />
-
-                    <figcaption>CSS3</figcaption>
-                </figure>
-            </li>  
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/sass.svg" alt="SASS" />
-
-                    <figcaption>SASS</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/javascript.svg" alt="JavaScript" />
-
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/typescript.svg" alt="TypeScript" />
-
-                    <figcaption>TypeScript</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/react.svg" alt="React" />
-
-                    <figcaption>React</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/wordpress.svg" alt="WordPress" />
-
-                    <figcaption>WordPress</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/adobe.svg" alt="Adobe XD & PS" />
-
-                    <figcaption>Adobe XD & PS</figcaption>
-                </figure>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/git.svg" alt="Git" />
-
-                    <figcaption>Git</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/github.svg" alt="GitHub" />
-
-                    <figcaption>GitHub</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/npm.svg" alt="NPM" />
-
-                    <figcaption>NPM</figcaption>
-                </figure>
-            </li>
-
-            <li class="technologies__list-item">
-                <figure>
-                    <img src="../static/images/raspberry_pi.svg" alt="Raspberry Pi" />
-
-                    <figcaption>Raspberry Pi</figcaption>
-                </figure>
-            </li>
+            {% for technology in technologies %}
+                {% include "components/technologies.njk" %}
+            {% endfor %}
         </ul>
     </div>
 </section>

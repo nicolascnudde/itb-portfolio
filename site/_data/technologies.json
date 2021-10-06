@@ -1,0 +1,50 @@
+[
+    {
+        "image": "html5.svg",
+        "caption": "HTML5"
+    },
+    {
+        "image": "css3.svg",
+        "caption": "CSS3"
+    },
+    {
+        "image": "javascript.svg",
+        "caption": "JavaScript"
+    },
+    {
+        "image": "sass.svg",
+        "caption": "SASS"
+    },
+    {
+        "image": "react.svg",
+        "caption": "React"
+    },
+    {
+        "image": "wordpress.svg",
+        "caption": "WordPress"
+    },
+    {
+        "image": "vsc.svg",
+        "caption": "VSCode"
+    },
+    {
+        "image": "nodejs.svg",
+        "caption": "Node.js"
+    },
+    {
+        "image": "typescript.svg",
+        "caption": "TypeScript"
+    },
+    {
+        "image": "sequelize.svg",
+        "caption": "Sequelize"
+    },
+    {
+        "image": "adobe.svg",
+        "caption": "Adobe XD & PS"
+    },
+    {
+        "image": "github.svg",
+        "caption": "GitHub"
+    }
+]
